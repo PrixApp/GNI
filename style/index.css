@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', serif;
+    transition: all 0.5s ease;
+}
+#topbar{
+    height: 13vh;
+    background-color: black;
+    border-bottom: 2px solid #E22B63;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.topbarlogo{
+    height: 12vh;
+    width:15vw;
+    padding: 5px;
+}
+#topbarMidSection{
+    display: flex;
+    align-items: center;
+    width:40vw;
+}
+#contactno{
+    border: 1px solid #E22B63;
+    color:#E22B63;
+    height: 7vh;
+    width:20vw;
+    padding: 3px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 1.5vw;
+}
+#topbarMidSection a{
+    width:20vw;
+    height: 7vh;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    background-color: #E22B63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#topbar ul{
+    margin-left: auto;
+    padding: 5px;
+    margin-right: 12px;
+    display: block;
+}
+#topbar ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    color:white;
+    font-size: 1.5vw;
+    letter-spacing: 1.2px;
+}
+#topbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#topbar ul li a:hover{
+    color:#E22B63;
+}
+#topbar ul li a.active{
+    color:#E22B63;
+}
+#menuburger{
+    color:#E22B63;
+    font-size: 5vw;
+    display: none;
+    margin-right: 1vw;
+    width:7vw;
+}
+
+#middleSection{
+    height: 85vh;
+    background-image: url('../images/bgimg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#midMain{
+    height: 75vh;
+    width: 75vw;
+    border: 2px solid #E22B63;
+    display: flex;
+}
+#midLeft{
+    width:50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+#midLeft h1{
+    color: white;
+    font-size: 3vh;
+    letter-spacing: 2px;
+}
+#midLeft h6{
+    color: #E22B63;
+    font-size: 3vh;
+}
+#midLeft button{
+    background-color: #E22B63;
+    color: white;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    width:15vw;
+    height: 8vh;
+}
+#midLeft p{
+    color: white;
+    font-size: 2.5vh;
+    text-align: justify;
+    padding-right: 2vw;
+    letter-spacing: 1px;
+    line-height: 3vh;
+}
+#midRight{
+    width:50%;
+    background-image: url('../images/bgimg2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-left: 2px solid #E22B63;
+}
+/* Responsive design for tablet landscape */
+@media screen and (max-width:1024px) and (min-height:768px) {
+    #topbar{
+        height: 9vh;        
+    }
+    .topbarlogo{
+        height: 9vh;
+        width: 20vw;
+        padding: 3px;
+    }
+    #topbarMidSection{
+        width: 65vw;
+        justify-content: center;
+    }
+    #contactno{
+        height: 6vh;
+        width: 175px;
+        font-size: 1.5vw;
+        font-weight: 700;
+    }
+    #topbarMidSection a{
+        height: 6vh;
+        width:175px;
+        font-size: 1.5vw;
+        font-weight: 700;
+    }
+
+    #middleSection{
+        height: 80vh;
+    }
+    #midMain{
+        height: 75vh;
+        width: 90vw;
+    }
+    #topbar ul{
+        top:9vh;
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+        left:65%;
+        width: 33%;
+        background-color: #E22B63;
+        color: white;
+        position: absolute;
+        transition: all 0.5s ease;
+        display: none;
+    }
+    #topbar ul li{
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+        line-height: 3vw;
+        padding-left: 5px;
+        padding-top: 3px;
+        border-bottom: 1px solid wheat;
+    }
+    #topbar ul li a.active{
+        color: white;
+    }
+    #menuburger{  
+        display: block;
+        font-size: 3vw;
+    }
+    
+    #midLeft h1{
+        font-size: 2.5vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    #midLeft button{
+        width: 15vw;
+        height: 6vh;
+        font-size: 2vw;
+    }
+}
+/* Responsive design for tablet portrait */
+@media screen and (max-width:896px) and (min-height:1024px){
+    #topbar{
+        height: 10vh;        
+    }
+    .topbarlogo{
+        height: 9vh;
+        width: 25vw;
+        padding: 3px;
+    }
+    #topbarMidSection{
+        width: 65vw;
+        justify-content: center;
+    }
+    #contactno{
+        height: 6vh;
+        width: 175px;
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    #topbarMidSection a{
+        height: 6vh;
+        width:175px;
+        font-size: 2vw;
+        font-weight: 900;
+    }
+
+    #middleSection{
+        height: 60vh;
+    }
+    #midMain{
+        height: 50vh;
+        width: 90vw;
+    }
+    #topbar ul{
+        top:10vh;
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+        left:65%;
+        width: 33%;
+        background-color: #E22B63;
+        color: white;
+        position: absolute;
+        transition: all 0.5s ease;
+        display: none;
+    }
+    #topbar ul li{
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+        line-height: 4vw;
+        padding-left: 5px;
+        padding-top: 3px;
+        border-bottom: 1px solid wheat;
+    }
+    #topbar ul li a.active{
+        color: white;
+    }
+    #menuburger{  
+        display: block;
+    }
+    
+    #midLeft h1{
+        font-size: 3vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    #midLeft button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 2.5vw;
+    }
+
+}
+/* Responsive design for mobile landscape */
+@media screen and (max-width:860px) and (min-height:360px){ 
+    #topbar{
+        height: 12vh;        
+    }
+    .topbarlogo{
+        height: 11vh;
+        width: 15vw;
+        padding: 3px;
+    }
+    #topbarMidSection{
+        width: 65vw;
+        justify-content: center;
+    }
+    #contactno{
+        height: 7vh;
+        width: 23vw;
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    #topbarMidSection a{
+        height: 7vh;
+        width: 23vw;
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    #topbar ul{
+        top:12vh;
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+        left:62%;
+        width: 35%;
+        background-color: #E22B63;
+        color: white;
+        position: absolute;
+        transition: all 0.5s ease;
+        display: none;
+    }
+    #topbar ul li{
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+        line-height: 3vw;
+        padding-left: 4px;
+        padding-top: 3px;
+        border-bottom: 1px solid wheat;
+    }
+    #topbar ul li a.active{
+        color: white;
+    }
+    #menuburger{  
+        display: block;
+        font-size: 3vw;
+    }
+    #middleSection{
+        height: 120vh;
+    }
+    #midMain{
+        height: 110vh;
+        width: 90vw;        
+    }
+    #midLeft{
+        width:50%;
+        align-items: center;
+    }
+    #midRight{
+        width:50%;
+    }  
+    #midLeft h1{
+        font-size: 3vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    #midLeft button{
+        width: 20vw;
+        height: 10vh;
+        font-size: 2.5vw;
+    }
+}
+/* Responsive design for mobile portrait */
+@media screen and (max-width:425px) and (min-height:600px){
+    #topbar{
+        height: 9vh;        
+    }
+    .topbarlogo{
+        height: 8vh;
+        width: 30vw;
+        padding: 3px;
+    }
+    #topbarMidSection{
+        width: 65vw;
+        justify-content: center;
+    }
+    #contactno{
+        height: 5vh;
+        width: 40vw;
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    #topbarMidSection a{
+        display: none;
+    }
+    #topbar ul{
+        top:9vh;
+        margin: 0;
+        padding: 0;
+        margin-right: 15px;
+        left:50%;
+        width: 46%;
+        background-color: #E22B63;
+        color: white;
+        position: absolute;
+        transition: all 0.5s ease;
+        display: none;
+    }
+    #topbar ul li{
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+        line-height: 4vw;
+        padding-left: 5px;
+        padding-top: 3px;
+        border-bottom: 1px solid wheat;
+    }
+    #topbar ul li a.active{
+        color: white;
+    }
+    #menuburger{  
+        display: block;
+    }
+    #middleSection{
+        height: 60vh;
+    }
+    #midMain{
+        height: 50vh;
+        width: 90vw;
+        flex-direction: column-reverse;
+    }
+    #midLeft{
+        width:100%;
+        height: 50%;
+        align-items: center;
+    }
+    #midRight{
+        width:100%;
+        height: 50%;
+        border-left: 0px;
+        border-bottom: 2px solid #E22B63;
+    }  
+    #midLeft h1{
+        font-size: 3vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    #midLeft button{
+        width: 30vw;
+        height: 4vh;
+        font-size: 2.5vw;
+    }
+}
