@@ -24,6 +24,10 @@
     width:18rem;
     text-align: justify;
 }
-#aboutSection div img{
-    width: 95vh;
+#certificateDiv{
+    background-image: url('../images/Certificate.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    min-height: 600px;
 }
