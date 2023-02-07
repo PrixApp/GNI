@@ -25,7 +25,7 @@
     text-align: justify;
 }
 #certificateDiv{
-    background-image: url('public/images/Certificate.jpeg');
+    background-image: url('../images/Certificate.jpeg');
     background-size: cover;
     background-position: center;
     min-width: 100%;
