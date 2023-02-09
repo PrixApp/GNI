@@ -13,6 +13,20 @@
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+.carousel-item img{
+    border: 2px solid royalblue;
+    max-height: 600px;
+}
+#whyus{
+    background-image: url(../images/whyusimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+#whyus div div div{
+    border: 0.5px solid gray;
+}
 .serviceSec .col{
     display: flex;
     align-items: center;
