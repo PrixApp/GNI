@@ -3,42 +3,69 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
-    --bootstrap-gutter-x:0;
+    --bootstrap-gutter-x: 0;
 }
-.row{
-    margin: 0; padding: 0;
+
+#branding a {
+    background: linear-gradient(to left,
+            violet,
+            pink,
+            white,
+            lightgreen,
+            yellow,
+            orange,
+            red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500;
 }
-.carousel-indicators, .carousel-caption,
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-indicators,
+.carousel-caption,
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
     filter: invert(100%);
 }
-.carousel-item img{
+
+.carousel-item img {
     border: 2px solid royalblue;
     max-height: 600px;
 }
-#whyus{
+
+#whyus {
     background-image: url(../images/whyusimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
 }
-#whyus div div div{
+
+#whyus div div div {
     border: 0.5px solid gray;
 }
-.serviceSec .col{
+
+.serviceSec .col {
     display: flex;
     align-items: center;
     justify-content: center;
     /* background-color: black; */
-    padding:1px;
+    padding: 1px;
 }
-.card{
-    width:18rem;
+
+.card {
+    width: 18rem;
     text-align: justify;
 }
-#certificateDiv{
+
+#certificateDiv {
     background-image: url('../images/Certificate.jpeg');
     background-size: cover;
     background-position: center;
