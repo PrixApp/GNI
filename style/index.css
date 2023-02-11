@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 #toplogo{
-    background-image: url(../images/toplogoleft.png);
+    background-image: url('../images/toplogoleft.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -66,7 +66,7 @@
 }
 
 #whyus {
-    background-image: url(../images/whyusimg.jpg);
+    background-image: url('../images/whyusimg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
