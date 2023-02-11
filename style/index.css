@@ -4,34 +4,59 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
     --bootstrap-gutter-x: 0;
+    
 }
-
-#branding a {
-    background: linear-gradient(to left,
-            violet,
-            pink,
-            white,
-            lightgreen,
-            yellow,
-            orange,
-            red);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 500;
+#topbar{
+    width:95vw;
+    height:12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#toplogo{
+    background-image: url(../images/toplogoleft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40vw;
+    height: 12vw;
+}
+#topButtons{
+    width:60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#topbuttons a{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+    font-size: large;
+}
+#topbuttons a:hover{
+    background-color: red;
+    color:white;
+}
+.navbar-nav li{
+    min-width: 150px;
+    font-size: 1.5vw;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+.navbar-nav li:last-child{
+    border-right: none;
 }
 .row {
     margin: 0;
     padding: 0;
 }
-
 .carousel-indicators,
 .carousel-caption,
 .carousel-control-next,
-.carousel-control-prev
-
-/*, .carousel-indicators */
-    {
+.carousel-control-prev,
+.carousel-indicators 
+{
     filter: invert(100%);
 }
 
@@ -50,13 +75,13 @@
 
 #whyus div div div {
     border: 0.5px solid gray;
+    min-height: 250px;
 }
 
 .serviceSec .col {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: black; */
     padding: 1px;
 }
 
@@ -74,3 +99,55 @@
     border-radius: 5%;
     border: 2px solid red;
 }
+@media screen and (max-width:768px) {
+    #topbar{
+        height: 20vw;        
+    }
+    #toplogo{
+        width:50vw;
+        height:20vw;
+        padding-left: 1vw;
+    }
+    .navbar-nav li{
+        min-width: 150px;
+        font-size: 3vw;
+        border: none;
+        border-bottom: 1px solid gray;
+        text-align: left;
+    }
+}
+@media screen and (max-width:425px) {
+    #topbar{
+        height: 35vw;
+        flex-direction: column;
+        justify-content: space-around;      
+    }
+    #toplogo{
+        width:95vw;
+        height:20vw;
+    }
+    #topbuttons a{
+        min-height: 20px;
+        padding: 10px 5px 10px 5px;
+        border-radius: 10px;
+        font-size: large;
+    }
+    .navbar-nav li{
+        font-size: 5vw;
+    }
+}
+
+/*#branding a {
+    background: linear-gradient(to left,
+            violet,
+            pink,
+            white,
+            lightgreen,
+            yellow,
+            orange,
+            red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500;
+}*/

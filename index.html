@@ -20,17 +20,23 @@
 </head>
 
 <body>
+    <div id="topbar">        
+        <div id="toplogo"></div>
+        <div id="topbuttons">
+            <button class="btn btn-primary">Verification</button>
+            <button class="btn btn-warning">Admission</button>
+            <!-- <a href="verification.html">Verification</a>
+            <a href="admission.html">Admission</a> -->
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div id="branding">
-                <a class="navbar-brand" href="#">Guru Nanak Institute</a>
-            </div>
+        <div class="container-fluid">            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -47,14 +53,13 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="verification.html">Verification</a>
+                        <a class="nav-link" href="verification.html">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade m-0 p-0" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -197,6 +202,7 @@
             </div>
         </div>
     </div>
+
     <div id="testimonials" class="p-3">
         <section>
             <div class="row d-flex justify-content-center">
@@ -299,6 +305,7 @@
             </div>
           </section>
     </div>
+
     <div id="about" class="row bg-dark">
         <div class="col-sm-12 pt-3 display-3 text-center text-white">
             About Us
@@ -322,17 +329,16 @@
             </p>
         </div>
     </div>
+
     <div id="contact" class="row bg-light">
         <div class="col-sm-12 pt-3 display-3 text-center text-dark">
             Contact Us
         </div>
     </div>
     <div id="contactSection" class="row bg-light">
-        <!--Section: Contact v.2-->
+        
         <section class="mb-4">
-            <!--Section heading-->
-            <!-- <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2> -->
-            <!--Section description-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
             <p class="text-center w-responsive mx-auto mb-5">
                 Do you have any questions? Please do not hesitate to contact us
                 directly. Our team will come back to you within a matter of hours to
@@ -340,32 +346,22 @@
             </p>
 
             <div class="row">
-                <!--Grid column-->
                 <div class="col-md-8 mb-md-0 mb-5">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                        <!--Grid row-->
                         <div class="row">
-                            <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <label for="name" class="">Your name</label>
                                     <input type="text" id="name" name="name" class="form-control" />
                                 </div>
                             </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <label for="email" class="">Your email</label>
                                     <input type="email" id="email" name="email" class="form-control" />
                                 </div>
                             </div>
-                            <!--Grid column-->
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
@@ -374,11 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row">
-                            <!--Grid column-->
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <label for="message">Your message</label>
@@ -387,7 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Grid row-->
+                        
                     </form>
 
                     <div class="mt-3 ms-3 text-md-left">
@@ -396,9 +388,6 @@
                     </div>
                     <div class="status"></div>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
                 <div class="col-md-4 text-center">
                     <ul class="list-unstyled mb-0">
                         <li>
@@ -418,13 +407,11 @@
                         </li>
                     </ul>
                 </div>
-                <!--Grid column-->
             </div>
         </section>
-        <!--Section: Contact v.2-->
     </div>
-    <!--  -->
-    <div class="row bg-dark">
+
+    <div class="row bg-dark mt-5">
         <div class="text-center text-white p-2">
             Copyrights &copy; reserved. Designed by
             <a class="text-decoration-none" href="https://prixapp.com" target="_blank">prixapp.com</a>
