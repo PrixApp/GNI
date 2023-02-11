@@ -8,7 +8,7 @@
 }
 #topbar{
     width:95vw;
-    height:12vw;
+    height:15vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,10 +19,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 40vw;
-    height: 12vw;
+    height: 15vw;
 }
 #topButtons{
-    width:60vw;
+    width:55vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -108,6 +108,10 @@
         height:20vw;
         padding-left: 1vw;
     }
+    #topButtons{
+        width:30vw;
+        flex-direction: column;
+    }
     .navbar-nav li{
         min-width: 150px;
         font-size: 3vw;
@@ -118,20 +122,25 @@
 }
 @media screen and (max-width:425px) {
     #topbar{
+        width:95vw;
         height: 35vw;
         flex-direction: column;
         justify-content: space-around;      
     }
     #toplogo{
         width:95vw;
-        height:20vw;
+        height:25vw;
     }
-    #topbuttons a{
+    #topButtons{
+        width:95vw;
+        flex-direction: column;
+    }
+    /* #topbuttons a{
         min-height: 20px;
         padding: 10px 5px 10px 5px;
         border-radius: 10px;
         font-size: large;
-    }
+    } */
     .navbar-nav li{
         font-size: 5vw;
     }
