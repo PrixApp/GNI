@@ -4,21 +4,22 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
     --bootstrap-gutter-x: 0;
-    
+    outline: 1px solid brown;
+      
+}
+.row {
+    margin: 0;
+    padding: 0;
 }
 #topbar{
-    width:95vw;
+    width:100vw;
     height:15vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#toplogo{
-    background-image: url('../images/toplogoleft.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40vw;
+#toplogo img{
+    width: 45vw;
     height: 15vw;
 }
 #topButtons{
@@ -47,10 +48,7 @@
 .navbar-nav li:last-child{
     border-right: none;
 }
-.row {
-    margin: 0;
-    padding: 0;
-}
+
 .carousel-indicators,
 .carousel-caption,
 .carousel-control-next,
@@ -103,7 +101,7 @@
     #topbar{
         height: 20vw;        
     }
-    #toplogo{
+    #toplogo img{
         width:50vw;
         height:20vw;
         padding-left: 1vw;
@@ -112,6 +110,7 @@
         width:30vw;
         flex-direction: column;
     }
+    
     .navbar-nav li{
         min-width: 150px;
         font-size: 3vw;
@@ -122,17 +121,17 @@
 }
 @media screen and (max-width:425px) {
     #topbar{
-        width:95vw;
+        width:100vw;
         height: 35vw;
         flex-direction: column;
         justify-content: space-around;      
     }
-    #toplogo{
-        width:95vw;
+    #toplogo img{
+        width:100vw;
         height:25vw;
     }
     #topButtons{
-        width:95vw;
+        width:100vw;
         flex-direction: column;
     }
     /* #topbuttons a{
