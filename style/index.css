@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
     --bootstrap-gutter-x: 0;
-    outline: 1px solid brown;
+    /* outline: 1px solid brown; */
       
 }
 .row {
@@ -12,7 +12,7 @@
     padding: 0;
 }
 #topbar{
-    width:100vw;
+    width:98vw;
     height:15vw;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     height: 15vw;
 }
 #topButtons{
-    width:55vw;
+    width:50vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
