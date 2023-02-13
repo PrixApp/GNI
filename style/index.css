@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
     --bootstrap-gutter-x: 0;
-    outline: 1px solid brown;
+    /* outline: 1px solid brown; */
       
 }
 .row {
