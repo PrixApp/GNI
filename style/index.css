@@ -22,11 +22,11 @@
     width: 45vw;
     height: 15vw;
 }
-#topButtons{
-    width:50vw;
+#topbuttons{
+    width:30vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 #topbuttons a{
     text-decoration: none;
@@ -119,7 +119,7 @@
         text-align: left;
     }
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
     #topbar{
         width:100vw;
         height: 35vw;
