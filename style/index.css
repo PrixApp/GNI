@@ -12,15 +12,15 @@
     padding: 0;
 }
 #topbar{
-    width:98vw;
-    height:15vw;
+    width:97vw;
+    height:12vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #toplogo img{
     width: 45vw;
-    height: 15vw;
+    height: 12vw;
 }
 #topbuttons{
     width:30vw;
@@ -28,17 +28,21 @@
     align-items: center;
     justify-content: center;
 }
-#topbuttons a{
+.btn{
+    font-size: x-large;
+}
+/* #topbuttons a{
     text-decoration: none;
     border: 2px solid red;
     padding: 20px 5px 20px 5px;
     border-radius: 10px;
-    font-size: large;
+    font-size: xx-large;
+    
 }
 #topbuttons a:hover{
     background-color: red;
     color:white;
-}
+} */
 .navbar-nav li{
     min-width: 150px;
     font-size: 1.5vw;
