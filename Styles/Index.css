@@ -1,0 +1,51 @@
+﻿.carousel-indicators,
+.carousel-caption,
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+.carousel-caption{
+    background-color:black;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+.carousel-item img {
+    border: 2px solid black;
+    max-height: 600px;
+}
+
+#whyus {
+    background-image: url('../Images/whyusimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+    #whyus div div div {
+        border: 0.5px solid gray;
+        min-height: 250px;
+    }
+
+.serviceSec .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.card {
+    width: 18rem;
+    text-align: justify;
+}
+
+#certificateDiv {
+    background-image: url('../Images/Certificate.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-width: 95%;
+    min-height: 600px;
+    border-radius: 5%;
+    border: 2px solid red;
+}
